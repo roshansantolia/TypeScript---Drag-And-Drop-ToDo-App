@@ -38,8 +38,8 @@ textarea:focus {
 
 button {
   font: inherit;
-  background: #ff0062;
-  border: 1px solid #ff0062;
+  background: #3659b5;
+  border: 1px solid #3659b5;
   cursor: pointer;
   color: white;
   padding: 0.75rem 1rem;
@@ -51,13 +51,21 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #a80041;
-  border-color: #a80041;
+  background: #083fca;
+  border-color: #3659b5;
+}
+
+#app {
+  display: flex;
+  justify-content: space-between;
+  /* height: 100vh; */
 }
 
 .tasks {
   margin: 1rem;
   border: 1px solid #ff0062;
+  width: 30vw;
+  height: fit-content;
 }
 
 .tasks header {
@@ -69,11 +77,11 @@ button:active {
 }
 
 #completed-tasks {
-  border-color: #0044ff;
+  border-color: #15c39a;
 }
 
 #completed-tasks header {
-  background: #0044ff;
+  background: #15c39a;
 }
 
 .tasks h2 {
@@ -85,12 +93,14 @@ button:active {
   list-style: none;
   margin: 0;
   padding: 1rem;
+  height: auto;
 }
 
 .tasks li {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
   margin: 1rem;
+  background: #ffffff;
 }
 
 .tasks li h2 {
@@ -99,7 +109,7 @@ button:active {
 }
 
 #completed-tasks li h2 {
-  color: #0044ff;
+  color: #15c39a;
 }
 
 .tasks li h3 {
@@ -116,12 +126,14 @@ button:active {
 }
 
 #completed-tasks .droppable {
-  background: #d6e1ff;
+  background: #15c39a21;
 }
 
 #user-input {
+  width: 25vw;
+  height: 30vh;
   margin: 1rem;
   padding: 1rem;
-  border: 1px solid #ff0062;
+  border: 1px solid #3659b5;
   background: #f7f7f7;
 }
